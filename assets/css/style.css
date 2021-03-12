@@ -1,3 +1,5 @@
+
+/*General styles*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,41 +13,46 @@
 body {
     background-color: #d9dcd6;
 }
+/*HEADER*/
+
 /*changed this from a class to just 'header' */
-.header {
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:var(--grayblue);
     color: var(--white);
 }
 /* h1 does not need to be a cleass */
-h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 /* took out the header class, and just made this a class. added font size to be bigger than the other letters in the header. Changed the color to stand out more. */
-.seo {
+header h1 .seo {
     font-size:58px;
     color: #cc5500 ;
 }
-
-.header div {
+/*changed div to nav and removed the . infront of header*/
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-.header div ul {
+/*changed div to nav and took out the . infront of header*/
+header nav ul {
     list-style-type: none;
 
 }
-/* added position - not sure if it did anything - might change it */
-.header div ul li {
+/*changed div to nav and took out the . infront of header*/
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    position: center
+   
 }
+
+/*text styles*/
 
 a {
     color: var(--white);
@@ -56,6 +63,8 @@ p {
     font-size: 16px;
 }
 
+/*Hero class div with a background image */
+
 .hero {
     height: 800px;
     width: 100%;
@@ -64,6 +73,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/*Floats*/
 
 .float-left {
     float: left;
@@ -75,11 +86,15 @@ p {
     margin-left: 25px;
 }
 
-.content {
+/*main*/
+/* changed this from a class to 'main' */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/*benefits section*/
 
 .benefits {
     margin-right: 20px;
@@ -91,51 +106,29 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/* combined '', 'benifit-brand' and '.benefit-cost' into one class, 'benefit' */
-.benefit-lead {
-    margin-bottom: 32px;
-    color:var(--white);
-}
-.benefit-brand {
-    margin-bottom: 32px;
-    color:var(--white);
-}
-.benefit-cost {
+/* combined the 3 benefit section classes into one class called .benefit*/
+.benefit {
     margin-bottom: 32px;
     color:var(--white);
 }
 
-/* combined '', '' and '' into one class, 'h3benefit' */
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.benefit-brand h3 {
+
+/* combined 3 benefit h3 classes into one class '.benefit h3' */
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* combined '.benefit-lead img', '.benefit-brand img' and '.benefit-cost himg into one class, 'imgbenefit' */
-.benefit-lead img {
+/* combined 3 benefit img classes into one class called '.benefit img' */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-.benefit-cost img {
-        display: block;
-        margin: 10px auto;
-        max-width: 150px;
-}
-.search-engine-optimization {
+/*services class section*/
+
+/*changed the class name and combined 3 classes into one*/
+.service {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -144,59 +137,26 @@ p {
     color:var(--white);
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:var(--grayblue);
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:var(--grayblue);
-    color:var(--white);
-}
-
-.simg {
+/*changed name of class and combined 3 classes*/
+.service img{
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/*changed name of class and combined 3 classes in h2 into one*/
+.service h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/*Footer Section*/
+/*does not need to be a class*/
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-/*cgabged to h4 from h3*/
-.footer h4 {
+/*took out the class*/
+footer h2{
     font-size: 20px;
 }
        
