@@ -22,14 +22,14 @@ header {
     background-color:var(--grayblue);
     color: var(--white);
 }
-/* h1 does not need to be a cleass */
+/* h1 does not need to be a class */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 /* took out the header class, and just made this a class. added font size to be bigger than the other letters in the header. Changed the color to stand out more. */
 header h1 .seo {
-    font-size:58px;
+    font-size:78px;
     color: #cc5500 ;
 }
 /*changed div to nav and removed the . infront of header*/
@@ -159,4 +159,65 @@ footer {
 footer h2{
     font-size: 20px;
 }
-       
+
+/*Media Queries*/
+@media screen and (max-width: 400px){
+
+    body{
+        background-color:darkslategrey;
+    }
+    
+    header {
+        background-color: #cc5500;
+        font-size: 70px;
+        position: center;
+
+    }
+    header h1{
+        font-size: 60%;
+        float: center;
+
+    }
+    header h1 .seo {
+        font-size: 90px;
+        color:#2a607c;
+
+        }
+    header nav ul{
+        color: #2a607c;
+        background-color: #cc5500;
+        font-size:20px;
+        width: 100%;
+
+    }
+    header nav ul li {
+        float: none;
+        width: 100%;
+    }
+    p {
+        font-size: 23px;
+
+    }
+    .hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    .float-left{
+        margin-right:20%;
+    }
+
+    .float-right{
+        margin-left: 20%;
+    }
+
+    main{
+        margin-left: 30px;
+        flex: wrap;
+    }
+}    
+
