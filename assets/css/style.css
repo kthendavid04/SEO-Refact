@@ -161,7 +161,12 @@ footer h2{
 }
 
 /*Media Queries*/
-@media screen and (max-width: 400px){
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+
+/* media query for larger screens */
+@media screen and (min-width: 992px){
 
     body{
         background-color:darkslategrey;
