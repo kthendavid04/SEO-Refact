@@ -165,9 +165,13 @@ footer h2{
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
 
+
+}
 /* media query for larger screens */
 @media screen and (min-width: 992px){
-
+    nav ul {
+        
+    }
     body{
         background-color:darkslategrey;
     }
@@ -225,4 +229,3 @@ footer h2{
         flex: wrap;
     }
 }    
-
